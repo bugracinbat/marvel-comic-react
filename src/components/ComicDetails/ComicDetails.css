@@ -1,0 +1,49 @@
+.detailsContainer {
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: stretch;
+	text-align: center;
+	padding: 2em;
+	background-color: #ed1d24;
+}
+
+.resultsArea {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.img {
+	border: 2px solid black;
+	background: lightgray;
+	width: 50vw;
+}
+
+.left {
+	display: flex;
+	flex-grow: 1;
+	padding: 2em;
+	justify-content: center;
+	max-width: 40%;
+	order: 0;
+}
+
+.right {
+	display: flex;
+	flex-grow: 1;
+	padding: 2em;
+	max-width: 50vw;
+	order: 1;
+}
+
+.listArea {
+	width: 50vw;
+}
+
+.comicTitle {
+	font-family: Bangers;
+	color: white;
+	font-size: 2em;
+}

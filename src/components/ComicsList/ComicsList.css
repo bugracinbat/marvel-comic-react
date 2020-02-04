@@ -1,0 +1,91 @@
+.thumbnailContainer {
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+	text-align: left;
+	line-height: 0;
+}
+
+.thumbnail {
+	flex: 0 0 auto;
+	width: 18%;
+	position: relative;
+	text-align: left;
+	margin: 1%;
+	border: none;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+@media screen and (max-width: 767px) {
+	.thumbnail {
+		width: 30%;
+	}
+}
+
+.thumbnail:before {
+	content: '';
+	float: left;
+	padding-top: 100%;
+}
+
+.thumbnailImg {
+	width: 100%;
+}
+
+.thumbnailOverlay {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-image: linear-gradient(
+		to bottom,
+		rgba(0, 0, 0, 0.65) 0%,
+		rgba(0, 0, 0, 0) 25%,
+		rgba(0, 0, 0, 0) 75%,
+		rgba(0, 0, 0, 0.65) 100%
+	);
+	opacity: 1;
+}
+
+.thumbnail h2 {
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 1.4em;
+	text-transform: none;
+	margin: 0;
+	padding: 5px 0 0 0;
+	text-align: center;
+}
+
+@media screen and (max-width: 340px) {
+	.thumbnail h2 {
+		font-size: 14px;
+	}
+}
+
+.comicListTitle {
+	display: inline-block;
+	position: absolute;
+	top: 8px;
+	left: 10px;
+	width: 90%;
+}
+
+.truncated {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.paginationContainer {
+	margin: 1rem 2rem;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.prevButton {
+	margin-right: 20px;
+}
